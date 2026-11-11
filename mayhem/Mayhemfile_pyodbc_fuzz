@@ -1,0 +1,8 @@
+project: savantenvs/pyodbc
+target: pyodbc_fuzz
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/pyodbc_fuzz/testsuite
+cmds:
+  - cmd: /mayhem/pyodbc_fuzz
+    libfuzzer: true
